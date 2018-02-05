@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Temperature</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js“></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse" style="background-color:#006080;">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+              <a class="navbar-brand" href="index.html">Lattitude</a>
+            </div>
+      
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              
+               <ul class="nav navbar-nav navbar-right">
+                <li><a href="ComparisonsPage.html">Comparisons</a></li>
+                <li><a href="DataTable.html">Data</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="TemperaturePlot.html">Max Temperature vs. Latitude</a></li>
+                    <li><a href="WindPlot.html">Wind Speed vs. Latitude</a></li>
+                    <li><a href="CloudinessPlot.html">Cloudiness vs. Latitude</a></li>
+                    <li><a href="HumidityPlot.html">Humidity vs. Latitude</a></li>
+                  </ul>
+                </li>  
+              </ul>          
+            </div>
+          </div>   <!-- /.container-fluid -->
+         </nav>
+ <div class="container-fluid" style="background: white">
+    <div class="row">
+     <div class="col-lg-8" jumbotron>
+      
+          <h1>Max Temperature vs. Latitude Analysis</h1>
+          <p>Temperature and latitude are highly correlated but temperatures North and South of the equator behave differently.  Temperatures decline the further you get away from the equator both North and South, but they decline at a sharper rate North of the equator than they do South. Also, it is interesting that in my dataset the highest observed maximum temperatures occurred not on the equator but south of it.  </p>
+          <img src="HW7 Latitude vs Max Temperature.png" width="600" alt="Latitude vs Temperature"/>
+        </div>
+      
+</body>	
